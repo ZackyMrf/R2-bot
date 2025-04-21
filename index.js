@@ -557,7 +557,7 @@ async function stakeR2USD(wallet, amount) {
     const tx = await wallet.sendTransaction({
       to: CONTRACT_ADDRESSES.STAKE_R2USD,
       data: data,
-      gasLimit: 100000,
+      gasLimit: 300000,
       ...gasFees
     });
     
